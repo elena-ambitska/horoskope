@@ -1,0 +1,23 @@
+@import "variables";
+@import "breakpoints";
+
+.header {
+  background-color: $blue;
+  color: $light-blue;
+
+  .header-title {
+    @include typography-h2;
+    padding-top: 11px;
+    padding-bottom: 10px;
+    @include sm{
+      font-size: 10px;
+    }
+
+    strong {
+      text-transform: uppercase;
+      @include sm{
+        font-size: 17px;
+      }
+    }
+  }
+}

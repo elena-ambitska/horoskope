@@ -1,0 +1,47 @@
+@import "variables";
+@import "breakpoints";
+
+.hero {
+  background-image: url("../image/thumb_l_26128 2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  margin-top: 16px;
+
+  @include sm {
+    background-size: contain;
+  }
+}
+
+img {
+  @include sm {
+    height: 160px;
+    width: 146px;
+  }
+}
+
+.info-block {
+  margin-top: 34px;
+  @include sm{
+    margin-top: 7px;
+  }
+
+  .title {
+    @include typography-h2;
+    color: $blue;
+  }
+
+  .text {
+
+    margin-top: 43px;
+    margin-bottom: 47px;
+
+    @include typography-medium;
+    @include sm{
+      margin-top: 9px;
+      margin-bottom: 9px;
+
+    }
+  }
+
+}

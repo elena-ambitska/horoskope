@@ -1,0 +1,106 @@
+@import "variables";
+@import "breakpoints";
+
+form {
+  margin-bottom: 14px;
+  padding-bottom: 9px;
+  background-color: rgba(243, 244, 248, 1);
+  @include sm {
+    margin-bottom: 7px;
+  }
+
+  .form-title {
+    @include typography-h2;
+    color: $white;
+    background-color: $graphite;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    @include sm {
+      padding: 16px 22px 15px 21px;
+      font-size: 14px;
+    }
+  }
+
+  .wrapper-input {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: $light-grey;
+
+    .flex-wrap {
+      padding-top: 60px;
+      padding-bottom: 60px;
+
+      @include typography-medium;
+      color: $black;
+      @include sm {
+        padding-top: 25px;
+        padding-bottom: 17px;
+      }
+
+      input:checked + label {
+        color: $blue;
+        font-weight: bold;
+      }
+
+    }
+  }
+
+  button {
+    height: 45px;
+    width: 186px;
+    background-color: $blue;
+    color: $white;
+    border: none;
+    display: block;
+    margin: 16px auto;
+    @include typography-small;
+
+    &:hover {
+      background-color: $dark-blue;
+      box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.35);
+    }
+  }
+}
+.wrapper-column{
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  padding-top: 37px;
+  padding-bottom: 45px;
+}
+
+select{
+  align-items: center;
+  width: 186px;
+  height: 45px;
+  padding-left: 17px;
+  padding-right: 16px;
+  background: $white;
+  border: 1px solid #E4E4E4;
+@include typography-small;
+  text-align: left;
+  font-weight: 400;
+}
+option::selection{
+  color: $blue;
+  font-weight: bold;
+}
+.selection{
+  align-items: center;
+}
+
+.message{
+  width: 233px;
+  height: 36px;
+  background-color: $pink;
+  color:$bordo;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 22px;
+  text-align: center;
+  padding-top: 8px;
+}

@@ -1,0 +1,28 @@
+@import "reset";
+@import "header";
+@import "hero";
+@import "form";
+@import "footer";
+@import "breakpoints";
+@import "progress-bar";
+
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+
+body{
+   font-family: 'Roboto', sans-serif;
+}
+
+.container{
+   max-width: 623px;
+   display: block;
+   margin: 0 auto;
+   @include sm{
+      max-width: 320px;
+      padding-left: 17px;
+      padding-right: 16px;
+   };
+}

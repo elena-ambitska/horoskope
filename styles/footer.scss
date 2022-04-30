@@ -1,0 +1,10 @@
+@import "variables";
+
+small {
+  display: inline-block;
+  margin: 10px auto;
+  width: 100%;
+  @include super-small;
+  color: $super-light-grey;
+  text-transform: lowercase;
+}

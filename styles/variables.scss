@@ -1,0 +1,53 @@
+@import "breakpoints";
+
+$blue: rgba(49, 93, 250, 1);
+$dark-blue:rgba(53, 90, 223, 1);
+$light-blue: rgba(175, 220, 229, 1);
+$white: rgba(255, 255, 255, 1);
+$graphite: rgba(52, 59, 77, 1);
+$light-grey: rgba(243, 244, 248, 1);
+$black: rgba(0, 0, 0, 1);
+$super-light-grey: rgba(214, 214, 214, 1);
+$bordo: rgba(181, 62, 66, 1);
+$pink:rgba(255, 216, 207, 1);
+
+
+
+
+
+@mixin typography-h2 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 22px;
+  @include sm{
+    font-size: 17px;
+  }
+
+}
+
+@mixin typography-medium {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0;
+  text-align: left;
+  @include sm{
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
+@mixin typography-small{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@mixin super-small{
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: center;
+}
