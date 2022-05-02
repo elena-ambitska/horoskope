@@ -1,0 +1,42 @@
+@import "variables.scss";
+@import "hero";
+
+.for-color{
+  color: $blue;
+  padding-top: 19px;
+  padding-bottom: 19px;
+}
+.result{
+.text{
+  @include typography-medium;
+  padding-bottom: 10px;
+  strong{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 19px;
+    color:$graphite;
+  }
+}
+  .get-data{
+    width: 100%;
+    background-color: $blue;
+    color: $white;
+    border: none;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    img{
+      width: 27px;
+      height: 27px;
+      margin-left: 18px;
+
+    }
+    div{
+      @include typography-medium;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}

@@ -5,6 +5,9 @@
 @import "footer";
 @import "breakpoints";
 @import "progress-bar";
+@import "progres";
+@import "variables";
+@import "results";
 
 *,
 *::before,
@@ -25,4 +28,10 @@ body{
       padding-left: 17px;
       padding-right: 16px;
    };
+}
+h3{
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 19px;
+   color: $graphite;
 }

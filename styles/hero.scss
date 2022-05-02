@@ -5,21 +5,29 @@
   background-image: url("../image/thumb_l_26128 2.png");
   background-size: cover;
   background-repeat: no-repeat;
-
   margin-top: 16px;
 
   @include sm {
     background-size: contain;
   }
+  img{
+    animation: spin 10s cubic-bezier(0.74, 0.07, 0.35, 1.08) infinite reverse;
+    transform:rotate(1turn) translate(0) rotate(0);
+  }
 }
 
 img {
+
   @include sm {
     height: 160px;
     width: 146px;
   }
 }
-
+@keyframes spin {
+  100% {
+    transform:rotate(1turn) translate(0) rotate(-1turn);
+  }
+}
 .info-block {
   margin-top: 34px;
   @include sm{

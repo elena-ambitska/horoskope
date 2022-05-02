@@ -41,21 +41,21 @@ form {
         padding-bottom: 17px;
       }
 
-      input:checked + label {
-        color: $blue;
-        font-weight: bold;
-      }
-
     }
   }
+  input:checked + label {
+    color: $blue;
+    font-weight: bold;
+  }
+
 
   button {
+    display: none;
     height: 45px;
     width: 186px;
     background-color: $blue;
     color: $white;
     border: none;
-    display: block;
     margin: 16px auto;
     @include typography-small;
 
@@ -65,15 +65,17 @@ form {
     }
   }
 }
-.wrapper-column{
+
+.wrapper-column {
   display: flex;
   flex-direction: column;
   row-gap: 30px;
   padding-top: 37px;
   padding-bottom: 45px;
+  padding-left: 10px;
 }
 
-select{
+select {
   align-items: center;
   width: 186px;
   height: 45px;
@@ -81,26 +83,41 @@ select{
   padding-right: 16px;
   background: $white;
   border: 1px solid #E4E4E4;
-@include typography-small;
+  @include typography-small;
   text-align: left;
   font-weight: 400;
 }
-option::selection{
+
+option::selection {
   color: $blue;
   font-weight: bold;
 }
-.selection{
+
+.selection {
   align-items: center;
 }
 
-.message{
+.message {
+  display: block;
   width: 233px;
   height: 36px;
   background-color: $pink;
-  color:$bordo;
+  color: $bordo;
   font-weight: 300;
   font-size: 13px;
   line-height: 22px;
   text-align: center;
   padding-top: 8px;
 }
+
+figure {
+  img {
+    width: 81px;
+    height: 82px;
+  }
+
+  figcaption {
+    @include super-small;
+  }
+}
+
