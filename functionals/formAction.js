@@ -44,7 +44,7 @@ const pages = [
 
 ];
 
-let currentPage = 0;
+let currentPage = 6;
 
 const renderPage = () => {
 
